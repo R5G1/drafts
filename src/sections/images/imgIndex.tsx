@@ -7,6 +7,13 @@ import imgAdvantages5 from './advantages/5.svg';
 import imgAdvantages6 from './advantages/6.svg';
 import imgAdvantagesBg from './advantages/00.png';
 import imgPlanBg from './plan/00.png';
+import imgCertificate from './certificate/1.png';
+import imgCertificateBg from './certificate/00.svg';
+import imgRegistration from './registration/1.svg';
+import imgRegistrationVk from './registration/2.svg';
+import imgRegistrationOk from './registration/3.svg';
+import imgRegistrationF from './registration/01.svg';
+import imgMailing from './mailing/1.svg';
 export {
   imgNav,
   imgAdvantages1,
@@ -17,4 +24,11 @@ export {
   imgAdvantages6,
   imgAdvantagesBg,
   imgPlanBg,
+  imgCertificate,
+  imgCertificateBg,
+  imgRegistration,
+  imgRegistrationVk,
+  imgRegistrationOk,
+  imgRegistrationF,
+  imgMailing,
 };
