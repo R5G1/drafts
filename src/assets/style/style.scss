@@ -29,7 +29,7 @@ body {
 
     --mainColor: #FFFFFF;
     --darkColor: #1F1D2A;
-    --blackColor:  #000000;
+    --blackColor: #000000;
     --whiteColor: #FFFFFF;
     --greenColor: #14A76C;
     --orangeColor: #FF652F;
@@ -43,6 +43,15 @@ h1 {
     font-size: 55px;
     line-height: 122%;
     color: var(--darkColor);
+
+    @media (max-width:768px) {
+        font-size: 45px;
+        line-height: 92%;
+    }
+
+    @media (max-width:420px) {
+        font-size: 35px;
+    }
 }
 
 h2 {
@@ -83,7 +92,7 @@ input {
     width: 100%;
     height: 60px;
     padding: 0px 20px;
-    border: 1px solid #9FA0A7;
+    border: 1px solid var(--greyColor);
     border-radius: 15px;
     font-family: var(--ffRubik);
     font-weight: var(--fw700);

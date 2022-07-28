@@ -23,6 +23,7 @@
         position: absolute;
         z-index: -1;
         opacity: 0;
+        max-width: 50px;
     }
 
     &__one-checkbox+label {
@@ -101,7 +102,7 @@
     }
 
     &__content-conteiner {
-        min-height: calc(100vh - 200px);
+        min-height: calc(100vh - 250px);
         display: flex;
         justify-content: end;
         flex-direction: column;
@@ -385,12 +386,21 @@
 
 .questions {
     padding: 200px 0;
+
+    .disclosure-text-title-conteiner {
+        padding: 35px 10px;
+        border-top: 1px solid var(--blackColor);
+        border-bottom: 1px solid var(--blackColor);
+    }
 }
 
 .mailing {
-    background-position: center 0;
+    background-position: center;
     background-repeat: no-repeat;
-
+    background-size: cover;
+    max-width: 1680px;
+    border-radius: 20px;
+    margin: auto;
     .conteiner {}
 
     .content-title {
@@ -440,7 +450,7 @@
     .form-checkbox {
         max-width: 950px;
         padding: 0 10px;
-        margin: auto;
+        // margin: auto;
         padding-top: 20px;
         padding-bottom: 65px;
 
@@ -449,5 +459,78 @@
         &__one-checkbox-text {
             color: #D6D7DD;
         }
+    }
+}
+
+.footer {
+    .conteiner {}
+
+    &__content-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 70px;
+        width: 100%;
+
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__content-link {}
+
+    &__content-link-text {
+        margin: 10px 0;
+    }
+
+    &__content-link-a-conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 150px;
+    }
+
+    &__content-link-a {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &__content-nav {
+        max-width: 780px;
+        font-weight: var(--fw700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__content-nav-a {
+
+        font-family: var(--ffRubik);
+        font-size: 20px;
+        line-height: 27px;
+        color: var(--darkColor);
+        margin: 0 20px;
+    }
+
+    &__content-link-btn {
+        display: flex;
+        max-width: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .disclosure-text-title-conteiner {
+            justify-content: center;
+
+        }
+    }
+
+    &__content-text-bottom {
+        padding: 20px 0px 40px 0px;
+        text-align: center;
     }
 }

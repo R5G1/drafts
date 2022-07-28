@@ -1,10 +1,14 @@
 import React from 'react';
 import DisclosureText from '../components/DisclosureText/DisclosureText';
+import HeaderTimeEfect from './sectionComponents/headerTimeEfect';
 import * as img from './images/imgIndex';
 import './index.scss';
 
 function Sections() {
   function submitHandler(e: React.FormEvent) {
+    e.preventDefault();
+  }
+  function submitMailing(e: React.FormEvent) {
     e.preventDefault();
   }
   return (
@@ -36,7 +40,9 @@ function Sections() {
           </div>
           <div className="header__invite-conteiner">
             <button className="header__invite-btn">Учавствовать</button>
-            <div className="header__invite-time">добавить время</div>
+            <div className="header__invite-time">
+              <HeaderTimeEfect />
+            </div>
           </div>
         </div>
       </section>
@@ -235,17 +241,18 @@ function Sections() {
             Обещаем присылать только самое <br /> важное и интересное :)
           </p>
           <div className="mailing__form-conteiner">
-            <form className="mailing__form">
+            <form className="mailing__form" onSubmit={submitMailing}>
               <input className="mailing__form-input" type="text" placeholder="Email" />
               <button className="mailing__form-btn">Отправить</button>
+
               <div className="form-checkbox">
                 <input
                   className="form-checkbox__one-checkbox"
                   type="checkbox"
-                  id="check"
+                  id="check1"
                   required
                 />
-                <label htmlFor="check"></label>
+                <label htmlFor="check1"></label>
                 <p className="form-checkbox__one-checkbox-text">
                   Отправляя данные я соглашаюсь с{' '}
                   <a href="" style={{ color: 'var(--whiteColor)' }}>
@@ -260,6 +267,57 @@ function Sections() {
             </form>
           </div>
         </div>
+      </section>
+      <section className="footer">
+        <div className="conteiner">
+          <div className="footer__content-conteiner">
+            <div className="footer__content-link">
+              <p className="footer__content-link-text">Наши соцсети:</p>
+              <div className="footer__content-link-a-conteiner">
+                <a className="footer__content-link-a" href="#">
+                  <img src={img.imgFooter1} alt="" />
+                </a>
+                <a className="footer__content-link-a" href="#">
+                  <img src={img.imgFooter2} alt="" />
+                </a>
+                <a className="footer__content-link-a" href="#">
+                  <img src={img.imgFooter3} alt="" />
+                </a>
+              </div>
+            </div>
+            <div className="footer__content-nav">
+              <a href="#" className="footer__content-nav-a">
+                Главная
+              </a>
+              <a href="#" className="footer__content-nav-a">
+                Личный кабинет
+              </a>
+              <a href="#" className="footer__content-nav-a">
+                Контакты
+              </a>
+              <a href="#" className="footer__content-nav-a">
+                Конфиденциальность
+              </a>
+            </div>
+            <div className="footer__content-link-btn">
+              <p className="footer__content-link-text">Наши соцсети:</p>
+              <DisclosureText title="">
+                <div className="footer__content-link-a-conteiner">
+                  <a className="footer__content-link-a" href="#">
+                    <img src={img.imgFooter1} alt="" />
+                  </a>
+                  <a className="footer__content-link-a" href="#">
+                    <img src={img.imgFooter2} alt="" />
+                  </a>
+                  <a className="footer__content-link-a" href="#">
+                    <img src={img.imgFooter3} alt="" />
+                  </a>
+                </div>
+              </DisclosureText>
+            </div>
+          </div>
+        </div>
+        <div className="footer__content-text-bottom">@ Все права защищены. ООО”Слонум” 2022</div>
       </section>
     </>
   );

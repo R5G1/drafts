@@ -14,6 +14,9 @@ import imgRegistrationVk from './registration/2.svg';
 import imgRegistrationOk from './registration/3.svg';
 import imgRegistrationF from './registration/01.svg';
 import imgMailing from './mailing/1.svg';
+import imgFooter1 from './footer/1.svg';
+import imgFooter2 from './footer/2.svg';
+import imgFooter3 from './footer/3.svg';
 export {
   imgNav,
   imgAdvantages1,
@@ -31,4 +34,7 @@ export {
   imgRegistrationOk,
   imgRegistrationF,
   imgMailing,
+  imgFooter1,
+  imgFooter2,
+  imgFooter3,
 };
