@@ -3,7 +3,18 @@ import DisclosureText from '../components/DisclosureText/DisclosureText';
 import HeaderTimeEfect from './sectionComponents/headerTimeEfect';
 import * as img from './images/imgIndex';
 import './index.scss';
-
+import HeaderSpaceEfect from './sectionComponents/headerSpaceEfect';
+import { motion } from 'framer-motion';
+const btnAnimation = {
+  hidden: { background: 'var(--orangeColor)', border: '1px solid var(--orangeColor)' },
+  visible: (custom: number) => ({
+    background: 'var(--whiteColor)',
+    border: '1px solid var(--darkColor)',
+    transition: {
+      delay: custom * 1,
+    },
+  }),
+};
 function Sections() {
   function submitHandler(e: React.FormEvent) {
     e.preventDefault();
@@ -17,12 +28,20 @@ function Sections() {
         <div className="conteiner">
           <nav className="header__nav-conteiner">
             <div className="header__nav-title">
-              <img className="header__nav-title-img" src={img.imgNav} alt="" />
+              <img className="header__nav-title-img" src={img.imgHeaderNav} alt="" />
               <p className="header__nav-title">
                 Слон<span>УМ</span>
               </p>
             </div>
-            <button className="header__nav-title-btn">Войти</button>
+            <motion.button
+              initial="hidden"
+              animate="visible"
+              variants={btnAnimation}
+              custom={1.5}
+              className="header__nav-title-btn"
+            >
+              Войти
+            </motion.button>
           </nav>
           <div className="header__content-conteiner">
             <div className="header__content-text-conteiner">
@@ -34,8 +53,7 @@ function Sections() {
               </p>
             </div>
             <div className="header__content-img-conteiner">
-              <img className="header__content-img-conteiner" src="" alt="" />
-              <img className="header__content-img-conteiner" src="" alt="" />
+              <HeaderSpaceEfect />
             </div>
           </div>
           <div className="header__invite-conteiner">

@@ -32,14 +32,21 @@
 .timeTextSmoll {
     color: #9FA0A7;
 }
+
 @keyframes move {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 .timeEfect {
     display: flex;
     justify-content: center;
@@ -49,9 +56,9 @@
     line-height: 33px;
     margin: 0px 10px;
 
-    animation-duration: 1s;
-	animation-name: move;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
