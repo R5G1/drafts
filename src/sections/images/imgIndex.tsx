@@ -5,14 +5,18 @@ import imgHeaderClock from './header/space/будильник.svg';
 import imgHeaderDivision from './header/space/деление.svg';
 import imgHeaderLight from './header/space/лампочка.svg';
 import imgHeaderPalette from './header/space/палитра.svg';
-import imgHeaderPalette1 from './header/space/планета1.svg';
-import imgHeaderPalette2 from './header/space/планета2.svg';
-import imgHeaderPalette3 from './header/space/планета3.svg';
+import imgHeaderplanet1 from './header/space/планета1.svg';
+import imgHeaderplanet2 from './header/space/планета2.svg';
+import imgHeaderplanet3 from './header/space/планета3.svg';
 import imgHeaderPlus from './header/space/плюс.svg';
 import imgHeaderRocket from './header/space/ракета.svg';
-import imgHeaderPlane from './header/space/самолет.svg';
+import imgHeaderAeroplane from './header/space/самолет.svg';
 import imgHeaderElephant from './header/space/слон.svg';
 import imgHeaderBalloon from './header/space/шар.svg';
+import imgHeaderPencil from './header/pencil/1.svg';
+import imgHeaderGirl from './header/pencil/2.svg';
+import imgHeaderPencilAeroplane from './header/pencil/3.svg';
+
 import imgAdvantages1 from './advantages/1.svg';
 import imgAdvantages2 from './advantages/2.svg';
 import imgAdvantages3 from './advantages/3.svg';
@@ -40,14 +44,17 @@ export {
   imgHeaderDivision,
   imgHeaderLight,
   imgHeaderPalette,
-  imgHeaderPalette1,
-  imgHeaderPalette2,
-  imgHeaderPalette3,
+  imgHeaderplanet1,
+  imgHeaderplanet2,
+  imgHeaderplanet3,
   imgHeaderPlus,
   imgHeaderRocket,
-  imgHeaderPlane,
+  imgHeaderAeroplane,
   imgHeaderElephant,
   imgHeaderBalloon,
+  imgHeaderPencil,
+  imgHeaderGirl,
+  imgHeaderPencilAeroplane,
   imgAdvantages1,
   imgAdvantages2,
   imgAdvantages3,

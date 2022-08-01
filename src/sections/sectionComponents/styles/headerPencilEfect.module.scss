@@ -1,0 +1,52 @@
+.conteiner {
+    max-width: 350px;
+    max-height: 340px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: 200px;
+    bottom: 40px;
+
+
+}
+
+.contentHeaderPencil {
+    display: flex;
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contentHeaderPencilAnimation {
+    max-width: 330px;
+    max-height: 300px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.imgHeaderGirl {
+    height: 330px;
+    width: 275px;
+    margin: auto;
+
+}
+
+.imgHeaderPencil {
+    position: absolute;
+    height: 30px;
+    width: 33px;
+    left: 70px;
+    top: 170px;
+
+}
+
+.imgHeaderPencilAeroplane {
+    height: 90px;
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+}

@@ -3,8 +3,9 @@ import DisclosureText from '../components/DisclosureText/DisclosureText';
 import HeaderTimeEfect from './sectionComponents/headerTimeEfect';
 import * as img from './images/imgIndex';
 import './index.scss';
-import HeaderSpaceEfect from './sectionComponents/headerSpaceEfect';
+import HeaderSpaceEfect from './sectionComponents/headerSpaceEfect/headerSpaceEfect';
 import { motion } from 'framer-motion';
+import HeaderPencilEfect from './sectionComponents/headerPencilEfect';
 const btnAnimation = {
   hidden: { background: 'var(--orangeColor)', border: '1px solid var(--orangeColor)' },
   visible: (custom: number) => ({
@@ -12,6 +13,7 @@ const btnAnimation = {
     border: '1px solid var(--darkColor)',
     transition: {
       delay: custom * 1,
+      duration: 2,
     },
   }),
 };
@@ -37,7 +39,7 @@ function Sections() {
               initial="hidden"
               animate="visible"
               variants={btnAnimation}
-              custom={1.5}
+              custom={2}
               className="header__nav-title-btn"
             >
               Войти
@@ -54,6 +56,7 @@ function Sections() {
             </div>
             <div className="header__content-img-conteiner">
               <HeaderSpaceEfect />
+              <HeaderPencilEfect />
             </div>
           </div>
           <div className="header__invite-conteiner">
