@@ -1,0 +1,36 @@
+.conteiner {}
+
+.registration {
+    position: absolute;
+}
+
+.RegistrationAeroplane {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    z-index: 10;
+}
+
+.RegistrationPoint2,
+.RegistrationPoint1 {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+}
+
+.RegistrationPoint1 {
+    transform: rotateZ(50deg);
+    // transform: rotateY(10deg);
+    top: 0;
+    z-index: 1;
+}
+
+.RegistrationPoint2 {
+    transform: rotateZ(40deg);
+    top: 0;
+    left: 60px;
+}

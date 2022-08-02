@@ -6,6 +6,8 @@ import './index.scss';
 import HeaderSpaceEfect from './sectionComponents/headerSpaceEfect/headerSpaceEfect';
 import { motion } from 'framer-motion';
 import HeaderPencilEfect from './sectionComponents/headerPencilEfect';
+import PlanAeroplaneEfect from './sectionComponents/planAeroplaneEfect';
+import RegistrationAeroplaneEfect from './sectionComponents/registrationAeroplaneEfect';
 const btnAnimation = {
   hidden: { background: 'var(--orangeColor)', border: '1px solid var(--orangeColor)' },
   visible: (custom: number) => ({
@@ -134,11 +136,13 @@ function Sections() {
       </section>
       <section className="plan" style={{ backgroundImage: `url(${img.imgPlanBg})` }}>
         <div className="conteiner">
-          <div className="plan__content"></div>
           <div className="content-title">
             <h2>
               Пошаговый <b>план</b>
             </h2>
+          </div>
+          <div className="plan__content">
+            <PlanAeroplaneEfect />
           </div>
         </div>
       </section>
@@ -223,7 +227,11 @@ function Sections() {
                 </div>
                 <div className="registration__form-btn-conteiner">
                   <button className="registration__form-btn"> Учавствовать</button>
-                  <img className="registration__form-btn-img" src={img.imgRegistrationF} alt="" />
+
+                  <div className="registration__form-btn-img">
+                    {/* <img src={img.imgRegistrationF} alt="" /> */}
+                    <RegistrationAeroplaneEfect />
+                  </div>
                 </div>
               </form>
             </div>

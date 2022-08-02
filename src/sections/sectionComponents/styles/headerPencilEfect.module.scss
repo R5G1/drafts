@@ -31,15 +31,16 @@
     height: 330px;
     width: 275px;
     margin: auto;
-
+    position: relative;
+    z-index: 2;
 }
 
 .imgHeaderPencil {
     position: absolute;
-    height: 30px;
-    width: 33px;
-    left: 70px;
-    top: 170px;
+    width: 52px;
+    height: 52px;
+    left: 67px;
+    top: 160px;
 
 }
 

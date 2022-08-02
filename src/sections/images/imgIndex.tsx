@@ -16,7 +16,6 @@ import imgHeaderBalloon from './header/space/шар.svg';
 import imgHeaderPencil from './header/pencil/1.svg';
 import imgHeaderGirl from './header/pencil/2.svg';
 import imgHeaderPencilAeroplane from './header/pencil/3.svg';
-
 import imgAdvantages1 from './advantages/1.svg';
 import imgAdvantages2 from './advantages/2.svg';
 import imgAdvantages3 from './advantages/3.svg';
@@ -25,12 +24,15 @@ import imgAdvantages5 from './advantages/5.svg';
 import imgAdvantages6 from './advantages/6.svg';
 import imgAdvantagesBg from './advantages/00.png';
 import imgPlanBg from './plan/00.png';
+import imgPlanLine from './plan/1.svg';
+import imgPlanAeroplane from './plan/2.svg';
 import imgCertificate from './certificate/1.png';
 import imgCertificateBg from './certificate/00.svg';
 import imgRegistration from './registration/1.svg';
 import imgRegistrationVk from './registration/2.svg';
 import imgRegistrationOk from './registration/3.svg';
 import imgRegistrationF from './registration/01.svg';
+import imgRegistrationAeroplane from './registration/001.svg';
 import imgMailing from './mailing/1.svg';
 import imgFooter1 from './footer/1.svg';
 import imgFooter2 from './footer/2.svg';
@@ -63,12 +65,15 @@ export {
   imgAdvantages6,
   imgAdvantagesBg,
   imgPlanBg,
+  imgPlanLine,
+  imgPlanAeroplane,
   imgCertificate,
   imgCertificateBg,
   imgRegistration,
   imgRegistrationVk,
   imgRegistrationOk,
   imgRegistrationF,
+  imgRegistrationAeroplane,
   imgMailing,
   imgFooter1,
   imgFooter2,

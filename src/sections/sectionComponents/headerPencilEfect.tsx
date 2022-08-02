@@ -3,42 +3,53 @@ import { useEffect, useState } from 'react';
 import style from './styles/headerPencilEfect.module.scss';
 import * as img from '../images/imgIndex';
 
-const imgHeaderPencilAnimation: any = {
+const imgHeaderPencilAnimation = {
   hidden: {},
   visible: (custom: number) => ({
+    rotate: [0, 24, 0, 66, 0, 72, 0],
+    y: [0, -8, 2, -6, 4, -4, 2],
     transition: {
+      type: 'spring',
       delay: custom * 1,
+      damping: 1,
+      bounce: 1,
+      duration: 3.5,
+      ease: 'easeInOut',
+      times: [0, 0.2, 0.4, 0.5, 0, 6, 0.8, 1],
       repeat: Infinity,
-      repeatType: 'reverse',
     },
   }),
 };
-
+const contentHeaderPencilAnimation = {
+  hidden: { opacity: 0 },
+  visible: (custom: number) => ({
+    opacity: 1,
+    transition: {
+      delay: custom * 1,
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  }),
+};
 function HeaderPencilEfect() {
-  const startNumber = 2;
+  const startNumber = 0;
   return (
     <>
-      <div className={style.conteiner}>
-        <motion.div className={style.contentHeaderPencil}>
-          <motion.img
-            initial="hidden"
-            animate="visible"
-            custom={startNumber}
-            variants={imgHeaderPencilAnimation}
+      <motion.div className={style.conteiner}>
+        <div className={style.contentHeaderPencil}>
+          <img
             className={style.imgHeaderPencilAeroplane}
             src={img.imgHeaderPencilAeroplane}
             alt=""
           />
-          <div className={style.contentHeaderPencilAnimation}>
-            <motion.img
-              initial="hidden"
-              animate="visible"
-              custom={startNumber}
-              variants={imgHeaderPencilAnimation}
-              className={style.imgHeaderGirl}
-              src={img.imgHeaderGirl}
-              alt=""
-            />
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            custom={startNumber}
+            variants={contentHeaderPencilAnimation}
+            className={style.contentHeaderPencilAnimation}
+          >
+            <img className={style.imgHeaderGirl} src={img.imgHeaderGirl} alt="" />
             <motion.img
               initial="hidden"
               animate="visible"
@@ -48,9 +59,9 @@ function HeaderPencilEfect() {
               src={img.imgHeaderPencil}
               alt=""
             />
-          </div>
-        </motion.div>
-      </div>
+          </motion.div>
+        </div>
+      </motion.div>
     </>
   );
 }
