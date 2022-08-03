@@ -21,15 +21,6 @@ const btnAnimation = {
 };
 
 function Sections() {
-  const screenWidth = window.screen.width;
-  const windowInnerWidth = window.screen.width;
-  useEffect(() => {
-    screenWidth;
-    windowInnerWidth;
-  }, []);
-  windowInnerWidth < 1400 ? console.log('windowInnerWidth') : console.log('001');
-  console.log(screenWidth);
-  console.log(windowInnerWidth);
   function submitHandler(e: React.FormEvent) {
     e.preventDefault();
   }
