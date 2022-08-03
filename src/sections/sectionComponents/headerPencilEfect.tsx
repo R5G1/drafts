@@ -35,7 +35,12 @@ function HeaderPencilEfect() {
   const startNumber = 0;
   return (
     <>
-      <motion.div className={style.conteiner}>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        custom={startNumber}
+        className={style.conteiner}
+      >
         <div className={style.contentHeaderPencil}>
           <img
             className={style.imgHeaderPencilAeroplane}
@@ -43,17 +48,11 @@ function HeaderPencilEfect() {
             alt=""
           />
           <motion.div
-            initial="hidden"
-            animate="visible"
-            custom={startNumber}
             variants={contentHeaderPencilAnimation}
             className={style.contentHeaderPencilAnimation}
           >
             <img className={style.imgHeaderGirl} src={img.imgHeaderGirl} alt="" />
             <motion.img
-              initial="hidden"
-              animate="visible"
-              custom={startNumber}
               variants={imgHeaderPencilAnimation}
               className={style.imgHeaderPencil}
               src={img.imgHeaderPencil}

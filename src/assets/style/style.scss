@@ -113,6 +113,19 @@ button {
     border-radius: 15px;
 }
 
+@media (max-width:1500px) {
+
+    .header__content-img-conteiner,
+    .plan__content,
+    .registration__form-btn-img {
+        display: none;
+    }
+
+    .plan__content {}
+
+    .registration__form-btn-img {}
+}
+
 @media (max-width:1200px) {}
 
 @media (max-width:992px) {}

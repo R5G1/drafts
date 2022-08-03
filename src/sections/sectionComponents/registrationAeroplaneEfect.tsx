@@ -43,25 +43,25 @@ function RegistrationAeroplaneEfect() {
   const startNumber = 0.1;
   return (
     <>
-      <motion.div initial="hidden" whileInView="visible" className={style.conteiner}>
+      <motion.div
+        viewport={{ amount: 0.2, once: true }}
+        custom={startNumber}
+        initial="hidden"
+        whileInView="visible"
+        className={style.conteiner}
+      >
         <div className={style.registration}>
           <motion.div
-            custom={startNumber}
-            viewport={{ amount: 0.2, once: true }}
             variants={imgRegistrationAeroplane}
             className={style.RegistrationAeroplane}
             style={{ backgroundImage: `url(${img.imgRegistrationAeroplane})` }}
           ></motion.div>
           <motion.div
-            custom={startNumber}
-            viewport={{ amount: 0.2, once: true }}
             variants={RegistrationPoint1}
             className={style.RegistrationPoint1}
             style={{ backgroundImage: `url(${img.imgRegistrationAeroplane})` }}
           ></motion.div>
           <motion.div
-            custom={startNumber}
-            viewport={{ amount: 0.2, once: true }}
             variants={RegistrationPoint2}
             className={style.RegistrationPoint2}
             style={{ backgroundImage: `url(${img.imgRegistrationAeroplane})` }}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DisclosureText from '../components/DisclosureText/DisclosureText';
 import HeaderTimeEfect from './sectionComponents/headerTimeEfect';
 import * as img from './images/imgIndex';
@@ -19,7 +19,17 @@ const btnAnimation = {
     },
   }),
 };
+
 function Sections() {
+  const screenWidth = window.screen.width;
+  const windowInnerWidth = window.screen.width;
+  useEffect(() => {
+    screenWidth;
+    windowInnerWidth;
+  }, []);
+  windowInnerWidth < 1400 ? console.log('windowInnerWidth') : console.log('001');
+  console.log(screenWidth);
+  console.log(windowInnerWidth);
   function submitHandler(e: React.FormEvent) {
     e.preventDefault();
   }
@@ -29,6 +39,7 @@ function Sections() {
   return (
     <>
       <section className="header">
+        {}
         <div className="conteiner">
           <nav className="header__nav-conteiner">
             <div className="header__nav-title">
@@ -229,7 +240,6 @@ function Sections() {
                   <button className="registration__form-btn"> Учавствовать</button>
 
                   <div className="registration__form-btn-img">
-                    {/* <img src={img.imgRegistrationF} alt="" /> */}
                     <RegistrationAeroplaneEfect />
                   </div>
                 </div>

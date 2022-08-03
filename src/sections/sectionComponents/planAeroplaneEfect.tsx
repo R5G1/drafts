@@ -20,14 +20,14 @@ function PlanAeroplaneEfect() {
   return (
     <>
       <motion.div
+        initial="hidden"
+        whileInView="visible"
+        custom={startNumber}
+        viewport={{ amount: 0.2, once: true }}
         className={style.conteiner}
         style={{ backgroundImage: `url(${img.imgPlanLine})` }}
       >
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          custom={startNumber}
-          viewport={{ amount: 0.2, once: true }}
           variants={imgPlanAeroplane}
           className={style.planAeroplane}
           style={{ backgroundImage: `url(${img.imgPlanAeroplane})` }}
