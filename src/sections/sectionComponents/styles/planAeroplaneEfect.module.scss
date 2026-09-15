@@ -1,0 +1,81 @@
+.conteiner {
+    font-family: var(--ffRubik);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    max-height: 500px;
+
+    height: 100vh;
+    min-width: 1400px;
+}
+
+.plan {position: absolute;}
+
+.planAeroplane {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    z-index: 10;
+}
+
+.planPoint1,
+.planPoint2,
+.planPoint3 {
+
+    display: flex;
+    font-weight: var(--fw400);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+
+
+    p {
+        min-width: 275px;
+        max-width: 300px;
+        margin-left: 40px;
+        width: 100vw;
+    }
+
+    a {
+        font-weight: var(--fw500);
+        color: var(--greenColor);
+        text-decoration: underline;
+    }
+
+}
+
+.planPoint1 {
+    position: relative;
+    top: -40px;
+    left: -2vw;
+}
+
+.planPoint2 {
+    position: relative;
+    top: 80px;
+    left: 390px;
+}
+
+.planPoint3 {
+    position: relative;
+    top: 210px;
+
+    left: 855px;
+}
+
+.planPointP {}
+
+.planPointH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-weight: var(--fw700);
+    color: var(--whiteColor);
+    font-size: 40px;
+    line-height: 60px;
+    background: var(--orangeColor);
+}
